@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            tools:context=".one_to_fifty_main">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/numView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/numberView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/chronometer"
+                    app:layout_constraintBottom_toBottomOf="@+id/startBtn"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Number\n0"/>
+
+                <Chronometer
+                    android:id="@+id/chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/startBtn"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/chronometer"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="START"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"/>
+
+                <Button
+                    android:id="@+id/retryBtn"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/chronometer"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Re-START"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintTop_toBottomOf="@+id/numView"
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                tools:ignore="MissingConstraints" />
+
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="10dp"
+                android:background="#DDFFC0CB"
+                android:text="메인 화면으로"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>
