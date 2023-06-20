@@ -34,34 +34,21 @@ public class one_to_fifty_main extends AppCompatActivity
     one_to_fifty_ItemAdapter adapter;
     int now;
     private Disposable disposable;
-    Button back_btn, numbtn;
+    Button numbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
 
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE); // 전체화면
         getSupportActionBar().hide(); // 타이틀 바 가리기
         setContentView(R.layout.one_to_fifty_main); // 페이지 호출
 
         View item = getLayoutInflater().inflate(R.layout.one_to_fifty_item, null, false);
 
         numbtn = (Button) item.findViewById(R.id.numBtn);
-        back_btn = findViewById(R.id.back_btn);
 
         mbinding = DataBindingUtil.setContentView(this, R.layout.one_to_fifty_main);
-
-        // 메인화면 복귀 버튼
-        back_btn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(one_to_fifty_main.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         mbinding.gridView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener()
         {

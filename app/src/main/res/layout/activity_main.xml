@@ -30,20 +30,22 @@
             android:text="1 to 50"/>
 
         <Button
+            android:id="@+id/main_btn_soundgame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="10dp"
             android:background="#DDFFC0CB"
-            android:text="같은 카드를 찾아라"/>
+            android:text="키패드 피아노"/>
 
         <Button
+            android:id="@+id/main_btn_samesame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="10dp"
             android:background="#DDFFC0CB"
-            android:text="두더지 잡기"/>
+            android:text="같은 카드 뒤집기"/>
 
         <Button
             android:layout_width="match_parent"

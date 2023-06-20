@@ -27,6 +27,12 @@
         <activity
             android:name=".one_to_fifty_main">
         </activity>
+        <activity
+            android:name=".soundgame_main">
+        </activity>
+        <activity
+            android:name=".samesame_main">
+        </activity>
     </application>
 
 </manifest>

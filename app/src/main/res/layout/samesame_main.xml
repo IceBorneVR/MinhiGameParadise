@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/back"
+    >
+
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="게임 시작"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtn0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+            <ImageButton
+                android:id="@+id/imageBtn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageBtn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+            <ImageButton
+                android:id="@+id/imageBtn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageBtn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+            <ImageButton
+                android:id="@+id/imageBtn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageBtn6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+            <ImageButton
+                android:id="@+id/imageBtn7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageBtn8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+
+            <ImageButton
+                android:id="@+id/imageBtn9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cardback" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/resetBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/reset" />
+
+    </RelativeLayout>
+
+</LinearLayout>
