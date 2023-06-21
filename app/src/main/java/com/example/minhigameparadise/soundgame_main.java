@@ -21,8 +21,10 @@ public class soundgame_main extends AppCompatActivity
         getSupportActionBar().hide(); // 타이틀 바 가리기
         setContentView(R.layout.soundgame_main);
 
+        // 오디오 재생 권한 부여
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
         {
+            // 롤리팝보다 높으면 자동으로 권한 부여
             AudioAttributes audioAttributes = new AudioAttributes.Builder()
                     .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
                     .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
@@ -35,6 +37,7 @@ public class soundgame_main extends AppCompatActivity
         }
         else
         {
+            // 버전이 낮으면 오디오 재생 명령어 생성
             soundPool = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
         }
 

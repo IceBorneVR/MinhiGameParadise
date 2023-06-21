@@ -40,7 +40,8 @@ public class samesame_main extends AppCompatActivity implements View.OnClickList
             }
         });
 
-    }//onClick
+    }
+
     public void init()
     {
         imageList = new ArrayList<>();
