@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/minigameparadise3" />
+        android:src="@drawable/mainpage" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="10dp"
             android:background="#DDFFC0CB"
-            android:text="1 to 50"/>
+            android:text="1 to 50 - 준상"/>
 
         <Button
             android:id="@+id/main_btn_soundgame"
@@ -36,7 +36,7 @@
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="10dp"
             android:background="#DDFFC0CB"
-            android:text="키패드 피아노"/>
+            android:text="키패드 피아노 - 민희"/>
 
         <Button
             android:id="@+id/main_btn_samesame"
@@ -45,7 +45,7 @@
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="10dp"
             android:background="#DDFFC0CB"
-            android:text="같은 카드 뒤집기"/>
+            android:text="같은 카드 뒤집기 - 태훈"/>
 
         <Button
             android:layout_width="match_parent"
@@ -53,9 +53,10 @@
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="10dp"
             android:background="#DDFFC0CB"
-            android:text="다함께 차차차"/>
+            android:text="미완성 - 석현"/>
 
         <Button
+            android:id="@+id/main_btn_credit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"

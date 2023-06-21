@@ -22,6 +22,7 @@
         android:layout_width="600px"
         android:layout_height="600px"
         android:padding="20px"
+        android:scaleType="centerCrop"
         android:background="@color/white"
         android:src="@drawable/piano"/>
 

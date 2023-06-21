@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">민희게임천국</string>
+    <string name="member_credit">
+\n\n\n
+[ 윤준상 ]\n
+팀장\n
+메인 페이지, 1 To 50, 크레딧 제작\n
+프로젝트 최종 병합 담당\n
+\n\n
+[ 원민희 ]\n
+앱 디자인\n
+키패드 피아노 제작\n
+\n\n
+[ 성태훈 ]\n
+자료조사\n
+같은 카드 뒤집기 제작\n
+    </string>
 </resources>
