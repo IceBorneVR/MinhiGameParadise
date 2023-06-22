@@ -36,6 +36,15 @@
         <activity
             android:name=".CreditActivity">
         </activity>
+        <activity
+            android:name=".Card_remember_main">
+        </activity>
+        <activity
+            android:name=".Card_remember_easy">
+        </activity>
+        <activity
+            android:name=".Card_remember_ranking">
+        </activity>
     </application>
 
 </manifest>

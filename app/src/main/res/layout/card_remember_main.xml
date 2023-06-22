@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4785d6"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Card_remember_main">
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#fc8c14"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="게임 시작"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#ebdc3f"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="Normal"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#46c277"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="Hard"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button main_btn_1to50, main_btn_soundgame, main_btn_samesame, main_btn_credit;
+    Button main_btn_1to50, main_btn_soundgame, main_btn_samesame, main_btn_cardremember, main_btn_credit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity
         main_btn_1to50 = findViewById(R.id.main_btn_1to50);
         main_btn_soundgame = findViewById(R.id.main_btn_soundgame);
         main_btn_samesame = findViewById(R.id.main_btn_samesame);
+        main_btn_cardremember = findViewById(R.id.main_btn_cardremember);
         main_btn_credit = findViewById(R.id.main_btn_credit);
 
         // 1 TO 50 게임 이동 버튼
@@ -55,6 +56,17 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 Intent intent = new Intent(MainActivity.this, samesame_main.class);
+                startActivity(intent);
+            }
+        });
+
+        // 같은 숫자 찾기 게임 이동 버튼
+        main_btn_cardremember.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, Card_remember_main.class);
                 startActivity(intent);
             }
         });
